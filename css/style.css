@@ -83,9 +83,13 @@ header a {
     justify-content: center;
     align-items: center;
 }
+.margin-b {
+    margin-bottom: 35px; 
+}
 
 /**** Bouton de recherche *****/
 .bordureSearch {
+    
     border: 0.5px solid rgba(242, 242, 242, 1);
     width: 377px;
     border-radius: 10px;
@@ -119,19 +123,35 @@ header a {
 
 /***FILTRES ***/
 .filtres{
-    height: 50px ;
-    width: 173px;
+    padding: 0px 20px;
     gap: 10px;
     font-weight: bold;
     border: solid 3px rgba(242, 242, 242, 1);
     border-radius: 35px;
+    cursor: pointer;
+}
+
+.filtres :hover {
+    background-color:yellow;
+}
+.flexFiltres h2{
+    font-size:1em ;
 }
 .flexFiltres {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 15px;
 }
-
+/***INFO ***/
+.fa-info {
+    border: solid 2px rgba(242, 242, 242, 1);
+    border-radius: 35px;
+    width: 4px;
+    height: 10px;
+    padding:5px 8px;
+    display: inline;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
