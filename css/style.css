@@ -57,11 +57,36 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
-/***** Header *****/
-a:hover {
-    color: #0065FC;
-    border-top: solid 3px #0065FC;
+.flexCentre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+}
+.align-items-c{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.margin-b {
+    margin-bottom: 35px; 
+}
+.marginNegatifTop {
+    margin-top: -10px;
+}
+.displayBlock {
+    display: block;
+}
+/***** Header *****/
+
+/*****a:hover {
+    color: #0065FC;
+    border-top: solid 3px #0065FC;*****/
+
 header img {
     width: 61px;
     height: 19px;
@@ -77,16 +102,6 @@ header a {
     padding-top:1em ;
     margin-left: 4em;
 }
-
-.flexCentre{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.margin-b {
-    margin-bottom: 35px; 
-}
-
 /**** Bouton de recherche *****/
 .bordureSearch {
     
@@ -122,17 +137,37 @@ header a {
 }
 
 /***FILTRES ***/
-.filtres{
-    padding: 0px 20px;
-    gap: 10px;
+.button{
+    background-color: white;
+    color: black;
+    border: solid 2px rgba(242, 242, 242, 1);
+    border-radius:35px; 
+    padding:15px;
     font-weight: bold;
-    border: solid 3px rgba(242, 242, 242, 1);
-    border-radius: 35px;
-    cursor: pointer;
 }
-
+.button p{
+    display: inline;
+    margin-left: 8px;
+    font-size: 1.1em;
+}
+.boutonEco {
+    width: 167px;
+    height: 50px;
+}
+.boutonFam{
+    width: 131px;
+    height: 50px;
+}
+.boutonCoeur{
+    width: 164px;
+    height: 50px;
+}
+.boutonFlamme{
+    width: 161px;
+    height: 50px;
+}
 .filtres :hover {
-    background-color:yellow;
+    background-color:rgba(222, 235, 255, 1);
 }
 .flexFiltres h2{
     font-size:1em ;
@@ -152,6 +187,37 @@ header a {
     padding:5px 8px;
     display: inline;
 }
+/****** Hebergements***********/
+.card-hebergements {
+    width: 240px;
+    height:197px;
+}
+
+.images-hebergements {
+    width: 100%;
+    height:114px ;  
+    object-fit:cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.card-content-hebergements {
+    padding-left: 10px;
+}
+.hebergements {
+    width: 65%;
+
+}
+.titreHebergements {
+    position: relative;
+    bottom: 15px;   
+    left: 5px;
+}
+.winter {
+    font-size: 1em;
+    font-weight: bold;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -164,12 +230,6 @@ header a {
     padding: 30px;
     box-sizing: border-box;
 }
-
-/****** Hebergements ***********/
-.hebergements {
-    width: 65%;
-}
-
 /****** Populaires ***********/
 .populaires {
     width: 32%;

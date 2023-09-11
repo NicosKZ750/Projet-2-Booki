@@ -44,20 +44,25 @@
             <div class="flexFiltres margin-b" >
                 <h2>Filtres</h2>
                     <div class="filtres flexCentre">
-                        <i class="fa-solid fa-money-bill-wave fa-lg winter" style="color: #0065fc;"></i>
-                        <p>Économique</p>
+                        <button type="button" class="button boutonEco">
+                        <i class="fa-solid fa-money-bill-wave fa-xl" style="color: #0065fc;"></i><p>Économique</p>
+                        </button>
+                    </div>
+
+                    <div class="filtres flexCentre ">
+                        <button type="button" class="button boutonFam">
+                        <i class="fa-solid fa-person fa-xl" style="color: #0065fc;"></i><p>Familial</p>
+                    </button>
                     </div>
                     <div class="filtres flexCentre ">
-                        <i class="fa-solid fa-person fa-lg" style="color: #0065fc;"></i>
-                        <p>Familial</p>
-                    </div>
-                    <div class="filtres flexCentre ">
-                        <i class="fa-solid fa-heart fa-lg" style="color: #0065fc;"></i>
-                        <p>Romantique</p>
+                        <button type="button" class="button boutonCoeur">
+                        <i class="fa-solid fa-heart fa-xl" style="color: #0065fc;"></i><p>Romantique</p>
+                    </button>
                     </div>
                     <div class="filtres flexCentre">
-                        <i class="fa-solid fa-fire fa-lg" style="color: #0065fc;"></i>
-                        <p>Nos pépites</p>
+                        <button type="button" class="button boutonFlamme">
+                        <i class="fa-solid fa-fire fa-xl" style="color: #0065fc;"></i><p>Nos pépites</p>
+                    </button>
                     </div>
             </div>
                 <div class="margin-b">
@@ -72,8 +77,147 @@
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
+                    
+                <h2 class="titreHebergements ">Hébergements à Marseille</h2>
+                    <div class="flexRow">
+                <!--Haut-->
+                    <a href="#">
+                         <article class="card-hebergements card margin-b ">
+                            <img class="images-hebergements"src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="card-content-hebergements">
+                                <div class="card-txt marginNegatifTop">
+                                    <h3 class="card-title">Hôtel du port</h3>
+                                    <p class="card-subtitle marginNegatifTop">Nuit à partir de 52<span class="euro">€</span></p>
+                                </div>
+                                <div class="card-rating marginNegatifTop ">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
 
-                </section>
+                    <a href="#">
+                        <article class="card-hebergements card margin-b">
+                           <img class="images-hebergements"src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                           <div class="card-content-hebergements">
+                               <div class="card-txt marginNegatifTop">
+                                   <h3 class="card-title">Hôtel Chez Amina</h3>
+                                   <p class="card-subtitle marginNegatifTop">Nuit à partir de 96<span class="euro">€</span></p>
+                               </div>
+                               <div class="card-rating marginNegatifTop ">
+                                   <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                   <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                   <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                   <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                   <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                   <span class="sr-only">Note de 4 sur 5</span>
+                               </div>
+                           </div>
+                       </article>
+                   </a>                
+
+                    <a href="#">
+                        <article class="card-hebergements card margin-b">
+                            <img class="images-hebergements" src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="card-content-hebergements">
+                                <div class="card-txt marginNegatifTop">
+                                    <h3 class="card-title">Hôtel Les mouettes</h3>
+                                    <p class="card-subtitle marginNegatifTop">Nuit à partir de 76<span class="euro">€</span></p>
+                                </div>
+                                <div class="card-rating marginNegatifTop ">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                <!--bas-->
+            <div class="flexRow">
+                <a href="#">
+                    <article class="card-hebergements card">
+                       <img class="images-hebergements"src="./images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                       <div class="card-content-hebergements">
+                           <div class="card-txt marginNegatifTop">
+                               <h3 class="card-title">Hôtel de la mer</h3>
+                               <p class="card-subtitle marginNegatifTop">Nuit à partir de 46<span class="euro">€</span></p>
+                           </div>
+                           <div class="card-rating marginNegatifTop">
+                               <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                               <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                               <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                               <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                               <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                               <span class="sr-only">Note de 4 sur 5</span>
+                           </div>
+                       </div>
+                   </article>
+               </a>
+
+               <a href="#">
+                   <article class="card-hebergements card">
+                      <img class="images-hebergements"src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                      <div class="card-content-hebergements">
+                          <div class="card-txt marginNegatifTop">
+                              <h3 class="card-title">Auberge La Canebière</h3>
+                              <p class="card-subtitle marginNegatifTop">Nuit à partir de 25<span class="euro">€</span></p>
+                          </div>
+                          <div class="card-rating marginNegatifTop">
+                              <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                              <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                              <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                              <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                              <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                              <span class="sr-only">Note de 4 sur 5</span>
+                          </div>
+                      </div>
+                  </article>
+              </a>                
+
+               <a href="#">
+                   <article class="card-hebergements card">
+                       <img class="images-hebergements" src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                       <div class="card-content-hebergements">
+                           <div class="card-txt marginNegatifTop">
+                               <h3 class="card-title">Auberge Le Panier</h3>
+                               <p class="card-subtitle marginNegatifTop">Nuit à partir de 23<span class="euro">€</span></p>
+                           </div>
+                           <div class="card-rating marginNegatifTop">
+                               <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                               <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                               <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                               <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                               <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                               <span class="sr-only">Note de 4 sur 5</span>
+                           </div>
+                       </div>
+                    </div>
+                   </article>
+               </a>
+               <a class="winter" href="#" >Afficher plus</a>
+
+            </section>
+                
+
+
+
+
+
+
+
+
+                <!--Populaire-->
+
+
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
