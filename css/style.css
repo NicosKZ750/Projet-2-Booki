@@ -314,20 +314,20 @@ footer {
     display: flex;
     margin-top: 60px;
     background-color: rgba(242, 242, 242, 1);
+    margin-bottom: -10%;
 }
 footer ul {
+    position: relative;
+    top: 5px;
     width:33% ;
     height: 163;
     list-style-type: none;
     padding-left: 0%;
     margin-left: 20px;
-    margin-top: 15px;
 }
 footer li{
     margin-bottom: 12px;
 }
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
