@@ -22,7 +22,9 @@
     flex-direction: row;
     justify-content: space-between;
   }
-
+  .city {
+    width: 20%;
+  }
   .populaires-cards a {
     width: 30%;
   }
@@ -66,22 +68,20 @@
     flex-direction: column;
     gap: 15px;
   }
-  nav ul {
-    justify-content: center;
-    gap: 0%;
-  }
-  header a {
-    padding: 50px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid rgba(242, 242, 242, 1);
-  }
-  nav {
-    display: flex;
-    justify-content: flex-start;
+  .main_nav {
+    width: 100%;
     gap: 0px;
     margin-top: 15px;
+    border-bottom: 3px solid rgba(242, 242, 242, 1);
   }
-  nav a:hover {
+  .main_nav a {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  .main_nav a:hover {
     color: #0065fc;
     border-top: none;
     border-bottom: 3px solid #0065fc;
@@ -94,37 +94,36 @@
     margin-top: -15px;
   }
   /**Bouton Recherche**/
-  #research {
+  .research {
     align-items: center;
   }
-  #search {
-    padding: 14px 17px;
+  .search {
     border-radius: 15px;
     position: relative;
     right: 10px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.42);
   }
-  #city {
-    width: 240px;
+  .city {
+    width: 80%;
   }
-  #map {
+  .map {
     position: relative;
     left: 5px;
   }
-  #search .fa-solid {
+  .search .fa-solid {
     display: contents;
     font-size: 0.9em;
   }
-  #search span {
+  .search span {
     display: none;
   }
   /**Filtres**/
-  #filters {
+  .filters {
     padding: 0px 0px 0px 25px;
     margin: 0px 0px 25px 0px;
   }
 
-  #filters li {
+  .filters a {
     display: flex;
     align-items: center;
     padding: 10px;
@@ -132,14 +131,15 @@
     height: 25px;
     margin-bottom: 10px;
   }
-  #filters h2 {
+  .filters h2 {
     margin: 0;
     padding-bottom: 20px;
+    width: 100%;
   }
-  #filters span {
+  .filters span {
     font-size: 14px;
   }
-  #filters a {
+  .filters a {
     margin-bottom: 3px;
   }
   .fa-info {
@@ -215,4 +215,9 @@
     width: 80%;
     margin: 30px 0px 20px 40px;
   }
+  /****** MODIFIER
+  ENLEVER LES UL/IL INUTILE
+  RETIERER LES PADDING/MARGIN INUTILE
+  MODIFIER LES ID PAR DES CLASSES
+  AJOUTER UN GAP PLUTOT QUE DES MARGIN PADDING POUR LES FILTRES ET METTRE LA LARGEUR DE LA BARRE DE RECHERCHE EN %***********/
 }
